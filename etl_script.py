@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 # db connection parameters
 DB_NAME = "toxigen_db"
 DB_USER = "postgres"
-DB_PASSWORD = "Supahotfire21!"
+DB_PASSWORD = "password"
 DB_HOST = "localhost"
 DB_PORT = "5432"
 
