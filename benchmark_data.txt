@@ -1,0 +1,24 @@
+## Benchmark Build
+Extraction Time: 2.66 seconds
+Transformation Time: 2.88 seconds
+Load Time: 43.97 seconds
+Total ETL runtime: 49.51 seconds
+Memory Usage: 306.38 MB
+
+## Using batch inserts
+Extraction Time: 2.68 seconds
+Transformation Time: 2.94 seconds
+Load Time: 95.93 seconds
+Total ETL runtime: 101.55 seconds
+Memory Usage: 324.75 MB
+
+## Convert columns to `category` dtype (1st improvement in memory)
+Extraction Time: 2.74 seconds
+Transformation Time: 2.98 seconds
+Load Time: 41.57 seconds
+Total ETL runtime: 47.29 seconds
+Memory Usage: 288.79MB
+
+
+
+
