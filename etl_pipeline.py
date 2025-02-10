@@ -19,7 +19,7 @@ end_db = time.time()
 start_time = time.time()
 # extract data
 start_extract = time.time()
-file_path = "../data/toxigen.csv"
+file_path = "../data/toxigen.csv"   # path to the dataset location
 df = pd.read_csv(file_path)
 end_extract = time.time()
 print(f"Extraction Time: {end_extract - start_extract:.2f} seconds")

@@ -43,9 +43,24 @@ CREATE TABLE toxigen_data (
 ```
 
 ### Running the ETL Pipeline
-Run the Python script **etl_pipeline.py**:
+Before running the pipeline, make sure to unzip the toxigen data from `toxigen.zip`. On line 22 of `etl_pipeline.py`, the file location might need to be modified depending on where the data is unzipped. 
+
+Afterwards, run the Python script **etl_pipeline.py**:
 ```
 python etl_pipeline.py
 ```
+## Improvements Made for Large-Scale Data Processing
+Based on benchmarking data done on a few optimisation trials, the following improvements are achieved:
+1. Memory Optimisation
+    - Used categorical data types `(astype("category"))` to reduce memory usage
+2. Efficient Null handling
+    - Removed rows with missing values using `dropna()`
+3. Faster String Processing
+    - Used `(str.strip()********, str.lower())` instead of `.apply()`
+4. Extract and Transform Data in Local Memory
+    - Instead of saving transformed data into a temporary csv file, the data is stored in the script's allocated memory (in contrast to initial trials ran in `toxigen_etl.ipynb`.)
+5. Drop duplicates early on
+    - Prevents redundant processing
+
 
 
