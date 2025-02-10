@@ -21,7 +21,7 @@ Ensure Python 3.8+ is installed, along with the following libraries:
 PostgreSQL version 17 is used for this project. Install PostgreSQL and use default settings along with setting your own database password. For this project's purposes, the password used is **thepassword**.
 
 ## Database Setup & Execution Instructions
-After PostgreSQL is installed and running, open the **psql** command terminal by logging in using the credentials set. Then, run the following commands: 
+After PostgreSQL is installed and running, open the **psql** command terminal by logging in using the credentials set. Once the terminal is opened, press ENTER each time a prompt comes up until it asks for your password, which you should fill with the password set initially. Then, run the following commands: 
 1. Create a new database:
 ```
 CREATE DATABASE toxigen_db;
